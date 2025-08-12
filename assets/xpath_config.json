@@ -1,0 +1,182 @@
+[  
+  {
+    "id": 0,
+    "sort": 0,
+    "isSubscribed": true,
+    "delay": 50,
+    "name": "百度",
+    "host": "https://top.baidu.com",
+    "url": "https://top.baidu.com/board?tab=realtime",
+    "iconUrl": "https://www.baidu.com/favicon.ico",
+    "newsXpath": {
+      "position": "",
+      "title": "//div[@class='c-single-text-ellipsis']/text()",
+      "url": "//a[starts-with(@class, 'title_dIF3B')]/@href",
+      "popularity": "//div[starts-with(@class, 'hot-index')]/text()",
+      "imageUrl": "//a[starts-with(@class, 'img-wrapper')]/img/@src",
+      "parameter": "position"
+    }
+  },
+  {
+    "id": 1,
+    "sort": 1,
+    "isSubscribed": true,
+    "delay": 50,
+    "name": "百度贴吧",
+    "host": "https://tieba.baidu.com",
+    "url": "https://tieba.baidu.com/hottopic/browse/topicList?res_type=1",
+    "iconUrl": "https://www.baidu.com/favicon.ico",
+    "newsXpath": {
+      "position": "",
+      "title": "//a[@class='topic-text']/text()",
+      "url": "//a[@class='topic-text']/@href",
+      "popularity": "//span[@class='topic-num']/text()",
+      "imageUrl": "//img[@class='topic-cover']/@src",
+      "parameter": "default"
+    }
+  },
+  {
+    "id": 2,
+    "sort": 2,
+    "isSubscribed": false,
+    "delay": 2500,
+    "name": "微博",
+    "host": "https://s.weibo.com",
+    "url": "https://s.weibo.com/top/summary",
+    "iconUrl": "https://h5.sinaimg.cn/m/weibo-lite/icon-default-192.png",
+    "newsXpath": {
+      "position": "",
+      "title": "//td[@class='td-02']/a/text()",
+      "url": "//td[@class='td-02']/a/@href",
+      "popularity": "//td[@class='td-02']/span/text()",
+      "imageUrl": "//td[@class='td-02']/a/@href",
+      "parameter": "position" 
+    }
+  },
+  {
+    "id": 3,
+    "sort": 3,
+    "isSubscribed": false,
+    "delay": 2500,
+    "name": "抖音",
+    "host": "https://www.douyin.com",
+    "url": "https://www.douyin.com/hot",
+    "iconUrl": "https://p-pc-weboff.byteimg.com/tos-cn-i-9r5gewecjs/favicon.png",
+    "newsXpath": {
+      "position": "",
+      "title": "//div[@class='DLjn0BsN']//h3/text()",
+      "url": "//div[@class='DLjn0BsN']/a/@href",
+      "popularity": "//div[@class='iDGU44Jx']/span[1]/text()",
+      "imageUrl": "//div[@class='DLjn0BsN']/a/@href",
+      "parameter": "title"
+    }
+  },
+  {
+    "id": 4,
+    "sort": 4,
+    "isSubscribed": true,
+    "delay": 100,
+    "name": "历史上的今天",
+    "host": "https://mjintian.txcx.com",
+    "url": "https://mjintian.txcx.com/",
+    "iconUrl": "https://mjintian.txcx.com/static/icon/jintian.png",
+    "newsXpath": {
+      "position": "",
+      "title": "//a[@class='ml20']/text()",
+      "url": "//a[@class='ml20']/@href",
+      "popularity": "//div[contains(@class, 'zaoju-li')]//span/text()",
+      "imageUrl": "//a[@class='ml20']/@href",
+      "parameter": "default"
+    }
+  },
+  {
+    "id": 5,
+    "sort": 5,
+    "isSubscribed": false,
+    "delay": 500,
+    "name": "bilibili",
+    "host": "https://www.bilibili.com",
+    "url": "https://www.bilibili.com/v/popular/rank/all/",
+    "iconUrl": "https://www.bilibili.com/favicon.ico",
+    "newsXpath": {
+      "position": "",
+      "title": "//div[@class='info']/a/text()",
+      "url": "//div[@class='info']/a/@href",
+      "popularity": "//span[@class='data-box'][1]/text()",
+      "imageUrl": "//img[starts-with(@class, 'lazy-image')]/@src",
+      "parameter": "default"
+    }
+  },
+  { 
+    "id": 6,
+    "sort": 6,
+    "isSubscribed": false,
+    "delay": 500,
+    "name": "知乎",
+    "host": "https://www.zhihu.com/question",
+    "url": "https://www.zhihu.com/billboard",
+    "iconUrl": "https://static.zhihu.com/heifetz/favicon.ico",
+    "newsXpath": {
+      "position": "",
+      "title": "//div[@class='HotList-itemTitle']/text()",
+      "url": "//*[@id='root']//div/a[*]",
+      "popularity": "//div[@class='HotList-itemMetrics']/text()",
+      "imageUrl": "//div[@class='HotList-itemImgContainer']/img/@src",
+      "parameter": "zhihu"
+    }
+  },
+  {
+    "id": 7,
+    "sort": 7,
+    "isSubscribed": true,
+    "delay": 100,
+    "name": "第一财经",
+    "host": "https://www.yicai.com",
+    "url": "https://www.yicai.com/",
+    "iconUrl": "https://www.yicai.com/favicon.ico",
+    "newsXpath": {
+      "position": "",
+      "title": "//a[@class='f-db']//div[@class='common']/h2/text()",
+      "url": "//a[@class='f-db']/@href",
+      "popularity": "//a[@class='f-db']//span[@class='news_hot']/text()",
+      "imageUrl": "//a[@class='f-db']//img[starts-with(@class, 'u-img')]/@src",
+      "parameter": "default"
+    }
+  },
+  {
+    "id": 8,
+    "sort": 8,
+    "isSubscribed": true,
+    "delay": 500,
+    "name": "虎扑-步行街",
+    "host": "https://bbs.hupu.com",
+    "url": "https://bbs.hupu.com/all-gambia",
+    "iconUrl": "https://w1.hoopchina.com.cn/images/pc/old/favicon.ico",
+    "newsXpath": {
+      "position": "",
+      "title": "//div[@class='t-info']/a/span/text()",
+      "url": "//div[@class='t-info']/a/@href",
+      "popularity": "//div[@class='t-info']/span[@class='t-lights']/text()",
+      "imageUrl": "//div[@class='t-info']/a/@href",
+      "parameter": "default"
+    }
+  },
+  {
+    "id": 9,
+    "sort": 9,
+    "isSubscribed": false,
+    "delay": 500,
+    "name": "澎湃热榜",
+    "host": "https://www.thepaper.cn/",
+    "url": "https://m.thepaper.cn/htmlstatic",
+    "iconUrl": "https://www.thepaper.cn/favicon.ico",
+    "newsXpath": {
+      "position": "",
+      "title": "//div[starts-with(@class,'FirstCard_list_name')]/text()",
+      "url": "//a[starts-with(@class,'index_inherit')]/@href",
+      "popularity": "//span[starts-with(@class,'FirstCard_span_textFirst')]/text()",
+      "imageUrl": "//a[starts-with(@class,'index_inherit')]/@href",
+      "parameter": "default"
+    }
+  }
+]

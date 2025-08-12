@@ -1,0 +1,88 @@
+{
+    "@@locale": "en",
+    "date_format": "{date}",
+    "@date_format": {
+        "description": "A message with a date parameter",
+        "placeholders": {
+            "date": {
+                "type": "DateTime",
+                "format": "MMMd"
+            }
+        }
+    },
+    "time_format": "{time}",
+    "@time_format": {
+        "description": "A message with a date parameter",
+        "placeholders": {
+            "time": {
+                "type": "DateTime",
+                "format": "jm"
+            }
+        }
+    },
+    "hot": "Hot",
+    "over" : "-- It's over --",
+    "subscribe_title": "Subscribe",
+    "subscribe": "subscribe",
+    "subscribed": "subscribed",
+    "settings": "Settings",
+    "view_more": "More",
+    "preferences": "Preferences",
+    "language": "Language",
+    "choose_language": "Choose app language",
+    "dark_mode": "Dark mode",
+    "choose_dark_mode": "Choose dark mode",
+    "theme": "Theme",
+    "choose_theme": "Choose app theme",
+    "hot_list_count": "Hot items count",
+    "choose_hot_list_count": "Choose how many hot items diaplay",
+    "webview_mode": "Enable WebView",
+    "choose_webview_mode": "After enabling WebView, the number of subscribable sites will slightly increase, but the refresh time will significantly increase(restart app to take effect).",
+    "piece": "{count, plural, =0{no items} =1{1 piece} other{{count} pieces}}",
+    "@piece": {
+        "description": "A plural message",
+        "placeholders": {
+            "count": {
+                "type": "num",
+                "format": "compact"
+            }
+        }
+    },
+    "font_size": "Font size",
+    "choose_font_size": "Ajust app font size",
+    "other": "Other",
+    "restore_default": "Restore default",
+    "ensure_restore_default": "Are you sure to restore the default settings(include sites and preferences)?",
+    "about": "About",
+    "app_info": "App information",
+    "app_intro": "A news agrregation app",
+    "update": "Update",
+    "check_update": "Check update",
+    "check_result": "It's the latest version.",
+    "just_now": "Just now",
+    "five_min_ago": "5 minutes ago",
+    "ten_min_ago": "10 minutes ago",
+    "fifteen_min_ago": "15 minutes ago",
+    "thirty_min_ago": "30 minutes ago",
+    "one_hou_ago": "1 hour ago",
+    "five_hou_ago": "5 hours ago",
+    "ten_hou_ago": "10 hours ago",
+    "auto": "Auto",
+    "zh": "Simplified Chinese",
+    "en": "English",
+    "dark": "Dark mode",
+    "light": "Light mode",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "blue": "Sky blue",
+    "pink": "Cute pink",
+    "orange": "Vital orange",
+    "red": "Flame red",
+    "purple": "Violet purple",
+    "small": "Small",
+    "standard": "Standard",
+    "large": "Large",
+    "extra_large": "Extra large",
+    "enbale": "Enable",
+    "disable": "Disable"
+}

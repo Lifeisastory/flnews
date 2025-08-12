@@ -1,0 +1,89 @@
+{
+    "@@locale": "zh",
+    "date_format": "{date}",
+    "@date_format": {
+        "description": "A message with a date parameter",
+        "placeholders": {
+            "date": {
+                "type": "DateTime",
+                "format": "MMMd"
+            }
+        }
+    },
+    "time_format": "{time}",
+    "@time_format": {
+        "description": "A message with a date parameter",
+        "placeholders": {
+            "time": {
+                "type": "DateTime",
+                "format": "jm"
+            }
+        }
+    },
+    "hot": "热榜",
+    "over" : "-- 已经到底了 --",
+    "subscribe_title": "订阅",
+    "subscribe": "订阅",
+    "subscribed": "已订阅",
+    "settings": "设置",
+    "view_more": "更多",
+    "preferences": "个性化",
+    "language": "语言",
+    "choose_language": "选择应用语言",
+    "dark_mode": "深色模式",
+    "choose_dark_mode": "选择应用模式",
+    "theme": "主题",
+    "choose_theme": "选择应用主题",
+    "hot_list_count": "热榜显示条数",
+    "choose_hot_list_count": "选择热榜页面卡片显示新闻条数",
+    "webview_mode": "开启WebView",
+    "choose_webview_mode": "是否开启WebView（开启WebView后可订阅站点将少量增加，但会导致刷新时间显著增加。重启生效）",
+    "piece": "{count, plural, =0{不显示} =1{1 条} other{{count} 条}}",
+    "@piece": {
+        "description": "A plural message",
+        "placeholders": {
+            "count": {
+                "type": "num",
+                "format": "compact"
+            }
+        }
+    },
+    "font_size": "字体大小",
+    "choose_font_size": "调整应用字体大小",
+    "other": "其他",
+    "restore_default": "恢复默认",
+    "ensure_restore_default": "确定恢复默认设置（包括默认订阅和个性化）吗？",
+    "about": "关于",
+    "app_info": "应用信息",
+    "app_intro": "这是一个新闻聚合应用",
+    "update": "更新",
+    "check_update": "检查更新",
+    "check_result": "已经是最新版本",
+    "just_now": "刚刚",
+    "five_min_ago": "5分钟前",
+    "ten_min_ago": "10分钟前",
+    "fifteen_min_ago": "15分钟前",
+    "thirty_min_ago": "30分钟前",
+    "one_hou_ago": "1小时前",
+    "five_hou_ago": "5小时前",
+    "ten_hou_ago": "10小时前",
+    "auto": "跟随系统",
+    "zh": "简体中文",
+    "en": "英文",
+    "dark": "深色模式",
+    "light": "浅色模式",
+    "confirm": "确认",
+    "cancel": "取消",
+    "blue": "天空蓝",
+    "pink": "少女粉",
+    "orange": "活力橙",
+    "red": "烈焰红",
+    "purple": "霞光紫",
+    "small": "小",
+    "standard": "标准",
+    "large": "大",
+    "extra_large": "超大",
+    "enbale": "启用",
+    "disable": "禁用"
+
+}
