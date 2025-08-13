@@ -305,6 +305,7 @@ XPath（全称：XML Path Language）是一种用于在 XML 或 HTML 文档中�
 * **上下级查询**
   
     有些元素没有任何属性
+  
     ![](https://i0.hdslb.com/bfs/note/8aab5df728f77982aa06204feb7b8ca787b010d5.png@1192w.webp)
     ![](https://i0.hdslb.com/bfs/note/16c825f626c37531309e3998f69acfd69b2b3694.png@1192w.webp)
   
@@ -319,7 +320,9 @@ XPath（全称：XML Path Language）是一种用于在 XML 或 HTML 文档中�
 * **特殊元素：** 例如图标、按钮等等
   
   ![img](https://i0.hdslb.com/bfs/note/5b1870bb63ad028e6977dc74239825685a0aa4c9.png@1192w.webp)
+  
   svg元素直接复制xpath是不能定位的，直接写xpath的表达式是用到name属性去定位
+  
   `//*[name()='svg']`
   
 ### 不使用WebView
