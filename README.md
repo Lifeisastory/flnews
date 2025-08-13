@@ -6,6 +6,30 @@
 
 这是一个基于[Flutter](https://flutter.cn/)框架的新闻聚合应用。应用使用[XPath](https://baike.baidu.com/item/XPath/5574064)获取多个网站热门信息。灵感来源：[nowinnews](https://github.com/QCuncle/nowinnews)。
 
+* [X] 获取主流网站热榜新闻
+* [X] 沉浸式浏览（隐藏导航栏）
+* [X] 支持国际化（中英文）
+* [X] 深色模式切换
+* [X] 多种主题可选
+* [X] 自定义热榜显示条数
+* [X] 自定义字体大小
+* [X] 重置订阅配置
+* [ ] 查看新闻详情
+* [ ] 查看站点更多新闻
+* [ ] 搜索订阅站点新闻
+* [ ] 自动开启WebView
+
+<p align = "center">
+<img src="image/README/1755045886363.png" width="180" />
+<img src="image/README/1755046661676.png" width="180" />
+<img src="image/README/1755046772339.png" width="180" />
+<img src="image/README/1755046829016.png" width="180" />
+<img src="image/README/1755046855212.png" width="180" />
+<img src="image/README/1755046887625.png" width="180" />
+<img src="image/README/1755046933700.png" width="180" />
+<img src="image/README/1755046962513.png" width="180" />
+</p>
+
 ### 项目目录介绍
 
 ```cmd
@@ -285,46 +309,42 @@ XPath（全称：XML Path Language）是一种用于在 XML 或 HTML 文档中�
 **[xpath的一般写法](https://www.bilibili.com/opus/704942766364295192)：**`//*[ ]`  表示任意位置、任意的元素，[ ]内有两大类格式。也即 **定位有2种常用方式：** 通过属性类型或者文本内容。
 
 * **使用等号=表示精确查找**
-  
+
   * 利用属性：`//*[@属性='属性值'] `例如：`//*[@class='am-dropdown-toggle')]`其中class是属性名，'am-dropdown-toggle'是属性值
   * 利用文本：`//*[text()='文本值'] `例如：` //*[text()='人才招聘']`
-    
 * **使用contains进行模糊查询**
-  
+
   * 利用属性模糊查询：` //*[contains(@href,'baidu`')]
   * 利用文本内容模糊查询：`//*[contains(text(),'院系专业')]`
     既支持属性又支持文本
-    
 * **使用开头的starts-with()进行模糊查询**
-  
+
   当元素id是动态的，但总有一部分类似于前缀不变化，对于属性、文本内容都可以使用，匹配一个开始位置的关键字。
+
   * `//*[start-with(@id,'success')]`
   * `//*[start-with(text(),'练习')]`
     既支持属性又支持文本
-    
 * **上下级查询**
-  
-    有些元素没有任何属性
-  
-    ![](https://i0.hdslb.com/bfs/note/8aab5df728f77982aa06204feb7b8ca787b010d5.png@1192w.webp)
-    ![](https://i0.hdslb.com/bfs/note/16c825f626c37531309e3998f69acfd69b2b3694.png@1192w.webp)
-  
-    例如：`//*[@type='password']/../..`
-    通过前后的节点---包括同级、父节点来定位--即一级级的往上查找
-    适用：寻找的元素不稳定，用它的上下级定位
-  
+
+  有些元素没有任何属性
+
+  ![](https://i0.hdslb.com/bfs/note/8aab5df728f77982aa06204feb7b8ca787b010d5.png@1192w.webp)
+  ![](https://i0.hdslb.com/bfs/note/16c825f626c37531309e3998f69acfd69b2b3694.png@1192w.webp)
+
+  例如：`//*[@type='password']/../..`
+  通过前后的节点---包括同级、父节点来定位--即一级级的往上查找
+  适用：寻找的元素不稳定，用它的上下级定位
 * **多种条件精准查找**
-  
-    `//*[@class='mnav' `
-  
+
+  `//*[@class='mnav' `
 * **特殊元素：** 例如图标、按钮等等
-  
+
   ![img](https://i0.hdslb.com/bfs/note/5b1870bb63ad028e6977dc74239825685a0aa4c9.png@1192w.webp)
-  
+
   svg元素直接复制xpath是不能定位的，直接写xpath的表达式是用到name属性去定位
-  
+
   `//*[name()='svg']`
-  
+
 ### 不使用WebView
 
 在[api_client_service.dart](lib\data\services\api\api_client_service.dart)中，`getSiteHtml`函数尝试使用Dio库的 `get`方法直接请求网页html，然后将网页传入[default_xpath_processor.dart](lib\data\repositories\site\default_xpath_processor.dart)中处理获得需要的数据并组装成新闻实体。这种方法获取网页html的速度比较快，但是适用的网站比较少。
