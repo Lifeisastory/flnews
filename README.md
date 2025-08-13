@@ -325,7 +325,7 @@ XPath（全称：XML Path Language）是一种用于在 XML 或 HTML 文档中�
 
 ![img](https://i0.hdslb.com/bfs/note/5b1870bb63ad028e6977dc74239825685a0aa4c9.png@1192w.webp)
 
-    svg元素直接复制xpath是不能定位的，直接写xpath的表达式是用到name属性去定位
+svg元素直接复制xpath是不能定位的，直接写xpath的表达式是用到name属性去定位
 
     `//*[name()='svg']`
 
